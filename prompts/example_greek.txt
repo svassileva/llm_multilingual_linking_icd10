@@ -1,0 +1,27 @@
+**Example Input:**
+
+```
+Ασθενής εισήχθη με {delimiter}Οξύ έμφραγμα του μυοκαρδίου{delimiter} και παρουσίασε {delimiter}κολπική μαρμαρυγή{delimiter}.  Έλαβε θεραπεία με {delimiter}βαρφαρίνη{delimiter}.
+```
+
+**Example Output:**
+
+```json
+[
+  {{
+    "medical_term_greek": "{delimiter}Οξύ έμφραγμα του μυοκαρδίου{delimiter}",
+    "icd10_code": "I21.9",
+    "explanation": "Acute myocardial infarction, unspecified.  This is the most general code for acute MI without further specification of location or type."
+  }},
+  {{
+    "medical_term_greek": "{delimiter}κολπική μαρμαρυγή{delimiter}",
+    "icd10_code": "I48.91",
+    "explanation": "Unspecified atrial fibrillation.  This code is used when the type of atrial fibrillation is not specified."
+  }},
+  {{
+    "medical_term_greek": "{delimiter}βαρφαρίνη{delimiter}",
+    "icd10_code": "Z79.01",
+    "explanation": "Long term (current) use of anticoagulants.  This code indicates the patient is currently taking warfarin."
+  }}
+]
+```

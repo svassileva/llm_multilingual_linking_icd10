@@ -1,0 +1,42 @@
+**Example Input:**
+
+```
+Mujer de 72 años con antecedentes de {delimiter}fibrilación auricular{delimiter} y {delimiter}enfermedad pulmonar obstructiva crónica (EPOC){delimiter}. Ingresó por {delimiter}dificultad respiratoria{delimiter} progresiva y {delimiter}tos productiva{delimiter}. Se detectó {delimiter}neumonía adquirida en la comunidad{delimiter}. Durante la hospitalización, presentó {delimiter}descompensación de la EPOC{delimiter}. Fue tratada con antibióticos, broncodilatadores y anticoagulantes. Se da de alta con seguimiento ambulatorio.
+```
+
+**Example Output:**
+
+```json
+[
+  {{
+    "medical_term_spanish": "{delimiter}fibrilación auricular{delimiter}",
+    "icd10_code": "I48.0",
+    "explanation": "I48.0 corresponds to 'Paroxysmal atrial fibrillation', the most commonly documented type in medical history when no specific subtype is indicated."
+  }},
+  {{
+    "medical_term_spanish": "{delimiter}enfermedad pulmonar obstructiva crónica (EPOC){delimiter}",
+    "icd10_code": "J44.9",
+    "explanation": "J44.9 is the code for 'Chronic obstructive pulmonary disease, unspecified'. It is used when the specific subtype (such as emphysema or chronic bronchitis) is not clearly stated."
+  }},
+  {{
+    "medical_term_spanish": "{delimiter}dificultad respiratoria{delimiter}",
+    "icd10_code": "R06.0",
+    "explanation": "R06.0 refers to 'Dyspnea', the clinical term for difficulty breathing."
+  }},
+  {{
+    "medical_term_spanish": "{delimiter}tos productiva{delimiter}",
+    "icd10_code": "R05",
+    "explanation": "R05 is the general code for 'Cough'. The productive nature is considered a clinical detail, not a separate code."
+  }},
+  {{
+    "medical_term_spanish": "{delimiter}neumonía adquirida en la comunidad{delimiter}",
+    "icd10_code": "J18.9",
+    "explanation": "J18.9 is used for 'Pneumonia, unspecified', appropriate when the causative agent or specific anatomical location is not identified."
+  }},
+  {{
+    "medical_term_spanish": "{delimiter}descompensación de la EPOC{delimiter}",
+    "icd10_code": "J44.1",
+    "explanation": "J44.1 is the correct code for 'COPD with acute exacerbation', indicating a worsening of the respiratory condition."
+  }}
+]
+```
