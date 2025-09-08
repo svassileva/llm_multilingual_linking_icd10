@@ -1,5 +1,7 @@
 # Using LLMs for Multilingual Clinical Entity Linking to ICD-10
 
+## Paper link - https://arxiv.org/abs/2509.04868
+
 ## Citation
 
 If you use our code, please cite the following work (accepted for publication):
